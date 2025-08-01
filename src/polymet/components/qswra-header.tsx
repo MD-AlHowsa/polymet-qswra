@@ -38,7 +38,11 @@ export default function QswraHeader({ navigation }: QswraHeaderProps) {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl">
-              <ShieldIcon className="h-6 w-6 text-white" />
+              <img 
+                src="/qswra-lion-logo.png" 
+                alt="QSWRA Lion Logo" 
+                className="h-6 w-6 object-contain"
+              />
             </div>
             <div>
               <Link to="/" className="block">
@@ -102,7 +106,11 @@ export default function QswraHeader({ navigation }: QswraHeaderProps) {
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl">
-                    <ShieldIcon className="h-6 w-6 text-white" />
+                    <img 
+                      src="/qswra-lion-logo.png" 
+                      alt="QSWRA Lion Logo" 
+                      className="h-6 w-6 object-contain"
+                    />
                   </div>
                   <div>
                     <h2 className="text-lg font-bold">

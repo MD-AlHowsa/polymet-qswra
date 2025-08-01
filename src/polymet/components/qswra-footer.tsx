@@ -28,7 +28,11 @@ export default function QswraFooter() {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl">
-                <ShieldIcon className="h-8 w-8 text-white" />
+                <img 
+                  src="/qswra-lion-logo.png" 
+                  alt="QSWRA Lion Logo" 
+                  className="h-8 w-8 object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">
