@@ -99,11 +99,7 @@ export default function QswraHero({ companyInfo }: QswraHeroProps) {
                 </span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-800 rounded-full shadow-sm border border-gray-200 dark:border-gray-700">
-                <img 
-                  src="/qswra-lion-logo.png" 
-                  alt="QSWRA Lion Logo" 
-                  className="h-4 w-4 object-contain"
-                />
+                <ShieldIcon className="h-4 w-4 text-blue-500" />
 
                 <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                   {getText("مسجل لدى هيئة الاتصالات", "Registered by NCA")}
