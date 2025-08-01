@@ -60,7 +60,7 @@ export default function QswraLayout({ children }: QswraLayoutProps) {
 
         <QswraHeader navigation={navigation} />
 
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 flex flex-col">{children}</main>
         <QswraFooter />
       </div>
     </LanguageProvider>

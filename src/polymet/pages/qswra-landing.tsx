@@ -12,7 +12,7 @@ import {
 
 export default function QswraLanding() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col flex-1">
       {/* Hero Section */}
       <QswraHero companyInfo={companyInfo} />
 

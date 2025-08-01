@@ -20,7 +20,7 @@ export default function QswraFooter() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white relative">
+    <footer className="bg-gray-900 text-white relative mt-auto">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
@@ -216,7 +216,7 @@ export default function QswraFooter() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 z-10" />
+      <div className="fixed bottom-0 left-0 right-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 z-50" />
     </footer>
   );
 }
