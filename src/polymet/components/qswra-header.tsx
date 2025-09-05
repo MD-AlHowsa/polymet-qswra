@@ -2,10 +2,11 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ShieldIcon, MenuIcon, XIcon, PhoneIcon, MailIcon } from "lucide-react";
+import { MenuIcon, XIcon, PhoneIcon, MailIcon } from "lucide-react";
 import { useLanguage } from "@/polymet/components/language-context";
 import LanguageToggle from "@/polymet/components/language-toggle";
 import { Link } from "react-router-dom";
+import qswraLogo from "@/assets/qswra-logo-no-background.png";
 
 interface Navigation {
   name: string;
@@ -37,8 +38,8 @@ export default function QswraHeader({ navigation }: QswraHeaderProps) {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl">
-              <ShieldIcon className="h-6 w-6 text-white" />
+            <div className="p-2 bg-white rounded-xl shadow-sm border">
+              <img src={qswraLogo} alt="QSWRA Logo" className="h-8 w-8 object-contain" />
             </div>
             <div>
               <Link to="/" className="block">
@@ -75,7 +76,12 @@ export default function QswraHeader({ navigation }: QswraHeaderProps) {
           <div className="hidden md:flex items-center gap-3">
             <LanguageToggle />
 
-            <Button variant="outline" size="sm" className="gap-2">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="gap-2"
+              onClick={() => window.open('tel:+966575741337', '_self')}
+            >
               <PhoneIcon className="h-4 w-4" />
 
               {getText("اتصل بنا", "Call Us")}
@@ -101,8 +107,8 @@ export default function QswraHeader({ navigation }: QswraHeaderProps) {
             <SheetContent side="right" className="w-80">
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl">
-                    <ShieldIcon className="h-6 w-6 text-white" />
+                  <div className="p-2 bg-white rounded-xl shadow-sm border">
+                    <img src={qswraLogo} alt="QSWRA Logo" className="h-8 w-8 object-contain" />
                   </div>
                   <div>
                     <h2 className="text-lg font-bold">
@@ -140,7 +146,11 @@ export default function QswraHeader({ navigation }: QswraHeaderProps) {
                 <div className="flex justify-center mb-4">
                   <LanguageToggle />
                 </div>
-                <Button variant="outline" className="w-full gap-2">
+                <Button 
+                  variant="outline" 
+                  className="w-full gap-2"
+                  onClick={() => window.open('tel:+966575741337', '_self')}
+                >
                   <PhoneIcon className="h-4 w-4" />
 
                   {getText("اتصل بنا", "Call Us")}

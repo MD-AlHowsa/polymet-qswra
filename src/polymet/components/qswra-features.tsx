@@ -89,52 +89,6 @@ export default function QswraFeatures({ features }: QswraFeaturesProps) {
           })}
         </div>
 
-        {/* Additional Info Section */}
-        <div className="mt-20 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-700 rounded-3xl p-8 lg:p-12">
-          <div className="text-center max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold mb-6">
-              {getText(
-                "التزامنا بالجودة والأمان",
-                "Our Commitment to Quality and Security"
-              )}
-            </h3>
-            <div className="grid md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">
-                  100%
-                </div>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {getText("استضافة محلية متاحة", "Local Hosting Available")}
-                </p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-purple-600 mb-2">
-                  24/7
-                </div>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {getText("دعم فني", "Technical Support")}
-                </p>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-green-600 mb-2">
-                  99.9%
-                </div>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {getText("وقت التشغيل", "Uptime")}
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Badge variant="outline" className="text-sm py-2 px-4">
-                🇸🇦 {getText("رؤية 2030", "Vision 2030")}
-              </Badge>
-              <Badge variant="outline" className="text-sm py-2 px-4">
-                ⚡ {getText("سحابة محلية", "Local Cloud")}
-              </Badge>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

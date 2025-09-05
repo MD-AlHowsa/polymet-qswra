@@ -10,6 +10,7 @@ import {
   PlayIcon,
 } from "lucide-react";
 import { useLanguage } from "@/polymet/components/language-context";
+import qswraLogoSvg from "@/assets/Qswra logo/Qswra.svg";
 
 interface QswraHeroProps {
   companyInfo: {
@@ -63,9 +64,21 @@ export default function QswraHero({ companyInfo }: QswraHeroProps) {
               </span>
             </div>
 
-            {/* Main Heading */}
-            <h1 className="text-6xl lg:text-8xl font-bold mb-6 tracking-tight">
-              <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent">
+            {/* Main Logo */}
+            <div className="flex justify-center mb-6">
+              <img 
+                src={`${qswraLogoSvg}?v=${Date.now()}`} 
+                alt={getText(
+                  companyInfo.name,
+                  companyInfo.nameEn || companyInfo.name
+                )}
+                className="h-32 lg:h-48 w-auto object-contain"
+              />
+            </div>
+
+            {/* Company Name */}
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight text-center">
+              <span className="text-gray-600 dark:text-gray-400">
                 {getText(
                   companyInfo.name,
                   companyInfo.nameEn || companyInfo.name
