@@ -78,7 +78,7 @@ export default function QswraHero({ companyInfo }: QswraHeroProps) {
 
             {/* Company Name */}
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight text-center">
-              <span className="text-gray-600 dark:text-gray-400">
+              <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent">
                 {getText(
                   companyInfo.name,
                   companyInfo.nameEn || companyInfo.name
