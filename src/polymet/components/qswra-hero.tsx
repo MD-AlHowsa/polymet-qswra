@@ -39,7 +39,11 @@ export default function QswraHero({ companyInfo }: QswraHeroProps) {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-blue-950">
+    <section 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-blue-950"
+      itemScope 
+      itemType="https://schema.org/Organization"
+    >
       {/* Modern Grid Background */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]" />
 
@@ -77,7 +81,7 @@ export default function QswraHero({ companyInfo }: QswraHeroProps) {
             </div>
 
             {/* Company Name */}
-            <h1 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight text-center">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight text-center" itemProp="name">
               <span className="bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent">
                 {getText(
                   companyInfo.name,
@@ -95,7 +99,7 @@ export default function QswraHero({ companyInfo }: QswraHeroProps) {
             </p>
 
             {/* Description */}
-            <p className="text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed" itemProp="description">
               {getText(
                 companyInfo.description,
                 companyInfo.descriptionEn || companyInfo.description

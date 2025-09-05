@@ -1,12 +1,12 @@
 export const companyInfo = {
   name: "قسورة",
   nameEn: "Qswra",
-  tagline: "الابتكار في الأمن السيبراني",
-  taglineEn: "Innovation in Cybersecurity",
+  tagline: "الابتكار في الأمن السيبراني والتوعية الأمنية",
+  taglineEn: "Innovation in Cybersecurity and Security Awareness",
   description:
-    "شركة تقنية سعودية رائدة في مجال الأمن السيبراني، نستخدم الذكاء الاصطناعي لتطوير حلول مبتكرة تحمي المؤسسات من التهديدات الرقمية",
+    "قسورة Qswra شركة تقنية سعودية رائدة في مجال الأمن السيبراني والتوعية الأمنية. نقدم حلول CyberPhish للتدريب على الأمن السيبراني، وكيل الذكاء الاصطناعي لاكتشاف التصيد الاحتيالي، ومنصة GRC للحوكمة والامتثال. جميع حلولنا مستضافة محلياً في المملكة العربية السعودية.",
   descriptionEn:
-    "A leading Saudi technology company in cybersecurity, using artificial intelligence to develop innovative solutions that protect organizations from digital threats",
+    "Qswra is a leading Saudi technology company specializing in cybersecurity and security awareness solutions. We offer CyberPhish for cybersecurity training, AI-powered phishing detection agents, and GRC platforms for governance and compliance. All our solutions are locally hosted in Saudi Arabia.",
   mission:
     "نسعى لجعل الفضاء الرقمي أكثر أماناً من خلال حلول الذكاء الاصطناعي المتطورة",
   missionEn:
