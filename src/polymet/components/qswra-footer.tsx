@@ -12,6 +12,7 @@ import {
   ArrowUpIcon,
 } from "lucide-react";
 import { useLanguage } from "@/polymet/components/language-context";
+import { Link } from "react-router-dom";
 
 export default function QswraFooter() {
   const { getText, isRTL } = useLanguage();
@@ -154,7 +155,9 @@ export default function QswraFooter() {
                 <PhoneIcon className="h-5 w-5 text-gray-400 mt-0.5 flex-shrink-0" />
 
                 <div>
-                  <p className="text-gray-300">+966 11 XXX XXXX</p>
+                  <a href="tel:+966575741337" className="text-gray-300 hover:text-white transition-colors">
+                    +966 57 574 1337
+                  </a>
                   <p className="text-gray-400 text-sm">
                     {getText("الأحد - الخميس", "Sunday - Thursday")}
                   </p>
@@ -191,15 +194,12 @@ export default function QswraFooter() {
               )}
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-white transition-colors">
+              <Link to="/privacy-policy" className="hover:text-white transition-colors">
                 {getText("سياسة الخصوصية", "Privacy Policy")}
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
+              </Link>
+              <Link to="/terms-of-use" className="hover:text-white transition-colors">
                 {getText("شروط الاستخدام", "Terms of Use")}
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                {getText("اتفاقية الخدمة", "Service Agreement")}
-              </a>
+              </Link>
             </div>
           </div>
 

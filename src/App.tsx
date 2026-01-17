@@ -4,6 +4,8 @@ import QswraLanding from "@/polymet/pages/qswra-landing";
 import CyberPhishProduct from "@/polymet/pages/cyberphish-product";
 import PhishAgentProduct from "@/polymet/pages/phish-agent-product";
 import GrcPlatformProduct from "@/polymet/pages/grc-platform-product";
+import PrivacyPolicy from "@/polymet/pages/privacy-policy";
+import TermsOfUse from "@/polymet/pages/terms-of-use";
 
 export default function QswraPrototype() {
   return (
@@ -50,6 +52,24 @@ export default function QswraPrototype() {
           element={
             <QswraLayout>
               <GrcPlatformProduct />
+            </QswraLayout>
+          }
+        />
+
+        <Route
+          path="/privacy-policy"
+          element={
+            <QswraLayout>
+              <PrivacyPolicy />
+            </QswraLayout>
+          }
+        />
+
+        <Route
+          path="/terms-of-use"
+          element={
+            <QswraLayout>
+              <TermsOfUse />
             </QswraLayout>
           }
         />
